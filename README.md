@@ -13,7 +13,7 @@ Este projeto tem como objetivo proporcionar bem-estar, foco e energia positiva p
 
 E receba uma resposta personalizada da IA com carinho e intenção.
 
-🚀 [Link do projeto (coloque aqui o link se já estiver no ar)](https://seuprojeto.vercel.app)
+🚀 [Link do projeto (https://joyce-gomes.github.io/nlw-agents-joyce-edition/)
 
 ---
 
@@ -21,7 +21,7 @@ E receba uma resposta personalizada da IA com carinho e intenção.
 
 - 🔐 Campo para inserir a **API Key do Gemini**
 - 💬 Envio de perguntas para um **agente de IA motivacional**
-- ✨ Respostas acolhedoras e com limite de até 300 caracteres
+- ✨ Respostas acolhedoras e com limite de até 400 caracteres
 - 🎨 Interface estilizada com cores suaves e tipografias encantadoras
 - 📱 Design responsivo e animações sutis para melhor experiência
 
@@ -63,7 +63,7 @@ Durante as 3 aulas da trilha *Discover*, explorei:
 
 ## 🧠 Prompt de IA usado
 
-Você é um assistente motivacional focado em bem-estar emocional, autocuidado e energia positiva para o dia. Responda com mensagens gentis, leves e sinceras, em até 300 caracteres. Pode usar emojis com moderação.```
+Você é um assistente motivacional focado em bem-estar emocional, autocuidado e energia positiva para o dia. Responda com mensagens gentis, leves e sinceras, em até 400 caracteres. Pode usar emojis com moderação.
 
 ## 🖼️ Preview
 
@@ -82,9 +82,9 @@ git clone https://github.com/seuusuario/nlw-agents-clareza.git
 # Acesse a pasta
 cd nlw-agents-clareza
 
-# Abra o index.html no navegador
+Abra o index.html no navegador
 
-❤️ Agradecimentos
+# ❤️ Agradecimentos
 Agradeço à Rocketseat por proporcionar essa jornada. Essa foi minha forma de aplicar os aprendizados com autenticidade, criatividade e propósito.
 
 Feito com 🌸 por Joyce Gomes dos Santos
