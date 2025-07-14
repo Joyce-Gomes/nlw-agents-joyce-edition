@@ -1,0 +1,177 @@
+* {
+    margin: 0; /* top-right-bottom-left MARGIN SEMPRE ESTERNO */
+    padding: 0;  /* PADDING SEMPRE INTERNO */
+    box-sizing: border-box; /* width e height considerando padding e border */
+    
+}
+
+
+.title {
+  font-family: 'Dancing Script' ,sans-serif;
+  font-optical-sizing: auto;
+    font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #f3cce3; 
+  letter-spacing: 1.2px;
+
+}
+
+button {
+   background-image: linear-gradient(90deg, #f8a5c2 0%, #f78fb3 50%, #eb99d5 100%);
+  color: #1d1a1a;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ }
+
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.1))
+}
+
+img {
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+header {
+   padding-top: 2rem;
+   text-align: center; /* top-bottom left-right */   
+}
+
+main {    
+    max-width: 34rem; /* largura máxima */
+    width: 90%; /* largura relativa */
+    margin: 2rem auto; /* centralizar horizontalmente Olhar como se fosse um relógio 1º nº é o 12, 3, 6, e 9*/
+}
+
+section {
+    background-image: linear-gradient(90deg, #f78fb3 0%, #eb99d5 50%, #f67280 100%);
+    border-radius: 2rem;
+    padding-top: 1px; /* padding é o espaçamento interno */
+}
+
+section > div {
+    padding: 1rem; /* Aumenta o espaçamento interno */
+    border-radius: 2rem; /* Borda mais arredondada */
+    background-color: #3d3551; /* Mantém a cor de fundo */      
+    color: #f1f1f1; /* Texto claro para melhor contraste */
+    max-width: 600px; /* Limita a largura para melhor leitura */
+    margin: 1rem auto; /* Centraliza horizontalmente e dá espaçamento externo */
+}
+
+/* aNIMAÇÕRD */
+main section {
+    opacity: 0; /* opacidade inicial */
+    transform: translateY(2rem); /* deslocamento vertical inicial */
+    animation-name: appear; /* nome da animação */
+    animation-duration: 700ms; /* duração da animação */
+    animation-fill-mode: forwards; /* manter o estado final da animação */
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1; /* opacidade inicial */
+        transform: translateY(0); /* deslocamento vertical */
+    }    
+}
+
+form {
+    display: flex; /* exibir como flexbox */   
+    gap: 0.85rem; /* espaçamento entre os elementos */
+    flex-wrap: wrap; /* quebra de linha automática */
+    margin: 1rem 0;
+}
+
+input, select {
+    all: unset; /* remover todos os estilos padrão */
+    border: 2px solid #a68bbf; /* borda */
+    border-radius: 0.5rem; /* borda arredondada */
+    padding: 0.675rem; /* espaçamento interno */
+    font-size: 0.875rem; /* tamanho da fonte */
+    background-color: #00000066; /* cor de fundo com opacidade */       
+}
+
+input {
+    flex: 1; /* ocupar todo o espaço disponível */
+}
+
+button {
+    width: 100%; /* ocupar toda a largura do elemento pai */
+    border: 0; /* remover borda */
+    background-image: linear-gradient (90deg, #f78fb3 0%, #eb99d5 50%, #f67280 100%); /* gradiente de fundo */
+    padding: 0.675rem; /* espaçamento interno */
+    border-radius: 0.5rem; /* borda arredondada */
+    font-weight: bold; /* negrito */
+    text-transform: uppercase; /* transformar texto em maiúsculas */
+    letter-spacing: 0.12px; /* espaçamento entre letras */
+
+    transition: all 0.3s; /* transição suave para todas as propriedades */
+}
+
+button:hover {
+    cursor: pointer;/* escurecer o botão ao passar o mouse */
+    transform: translateY(-2px); /* deslocamento vertical ao passar o mouse */
+    box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2); /* sombra ao passar o mouse */
+}
+
+button:disabled {
+    transition: initial;
+    transform: initial;
+    box-shadow: initial;
+    cursor: not-allowed;
+    color: black;
+}
+
+#aiResponse {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43E7AD;
+}
+
+#aiResponse ul {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+#aiResponse p {
+    color: white;
+}
+
+.loading {
+    animation: pulse 1s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.resposta-box {
+   margin-top: 1rem;
+  background-color: #1e1e2f;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #eaeaea;
+ 
+}

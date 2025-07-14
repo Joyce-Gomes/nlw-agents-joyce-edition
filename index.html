@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLW Agents</title>
+    <link rel="icon" href="./assets/rosa.png" type="image/png">
+    <link rel="stylesheet" href="./style.css" />  
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Libertinus+Mono&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.png" alt="Logo da Bem Me Quero">
+  </header>
+
+  <main>
+    <section>
+      <div class="box">
+        <h2 class="title">Clareza para o Seu Agora</h2>
+        <p class="subtitle">
+          Receba uma dica para cuidar da sua mente, energia e foco hoje!
+        </p>
+
+        <form id="form">
+          <input 
+            type="password" 
+            id="apiKey" 
+            placeholder="Informe sua API KEY do Gemini"
+            required/>
+
+          <input 
+            type="text" 
+            id="questionInput" 
+            placeholder="Ex: Como começar o dia com leveza?"
+            required/>         
+         <button id="askButton">Perguntar</button>
+        </form>
+
+       <div id="aiResponse" class="hidden">
+       <div class="response-content">
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
