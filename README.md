@@ -76,8 +76,6 @@ Você é um assistente motivacional focado em bem-estar emocional, autocuidado e
 bash
 Copiar
 Editar
-# Clone o repositório
-git clone https://github.com/seuusuario/nlw-agents-clareza.git
 
 # Acesse a pasta
 cd nlw-agents-clareza
